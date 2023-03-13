@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,11 +9,53 @@
 
    <EditText
        android:id="@+id/cost_of_bill"
-       android:hint="Bill Price"
+       android:hint="Bill Price......................."
        android:inputType="number"
        app:layout_constraintTop_toTopOf="parent"
        app:layout_constraintLeft_toLeftOf="parent"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"/>
+   <!--bill price input box-->
+   <TextView
+       android:id="@+id/performance_Quest"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="How was the Meal and Service ? "
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/cost_of_bill"/>
+   <!--question text-->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+   <RadioGroup
+      android:id="@+id/tips"
+       android:orientation="vertical"
+       android:checkedButton="@id/seven_percent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/performance_Quest"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+      <RadioButton
+          android:id="@+id/ten_percent"
+          android:text="Perfect (10%)"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+      <RadioButton
+          android:id="@+id/seven_percent"
+          android:text="Good (7%)"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+      <RadioButton
+          android:id="@+id/five_percent"
+          android:text="Normal (5%)"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+
+
+   </RadioGroup>
+
+
+
+
+
+</RadioGroup>
