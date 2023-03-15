@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">tip time</string>
+    <string name="bill_price">Bill Price.......................</string>
+    <string name="how_was_the_meal_and_service">How was the Meal and Service ?</string>
+    <string name="perfect_10">Perfect (10%)</string>
+    <string name="good_7">Good (7%)</string>
+    <string name="normal_5">Normal (5%)</string>
+    <string name="round_up_the_tip">round up the tip ?</string>
+    <string name="calculate">CALCULATE</string>
+    <string name="tip_amount">Tip Amount</string>
 </resources>
